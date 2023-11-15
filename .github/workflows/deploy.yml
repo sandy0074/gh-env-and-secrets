@@ -31,6 +31,7 @@ jobs:
       - name: Output information
         run: |
           echo "MANGODB_USERNAME: ${{ env.MANGODB_USERNAME }}"
+          
   deploy:
     needs: test
     runs-on: ubuntu-latest
